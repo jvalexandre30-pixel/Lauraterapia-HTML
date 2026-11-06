@@ -1,0 +1,205 @@
+/* IMAGEM PRINCIPAL */
+/* Ajuste do espaço superior */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    margin: 0;
+    padding: 20px 6%;
+}
+
+/* Imagem de tratamentos */
+body > img {
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    height: 320px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 14px;
+}
+
+/* TÍTULO DA PÁGINA */
+main h2 {
+    color: #39835a;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* ORGANIZAÇÃO DOS CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARDS DOS TRATAMENTOS */
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e8eee9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+    border-color: #39835a;
+}
+
+/* TÍTULO DOS CARDS */
+.card h3 {
+    color: #245c45;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* DESCRIÇÃO DOS CARDS */
+.card p {
+    color: #58695f;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* BOTÕES */
+.card button {
+    background-color: #39835a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #245c45;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* INFORMAÇÕES DOS TRATAMENTOS */
+#informacao {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #e0f0e5;
+    color: #263b32;
+    border-left: 5px solid #39835a;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+
+/* RODAPÉ */
+footer {
+    background-color: #183e2d;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main h2 {
+        font-size: 25px;
+    }
+
+    body > img {
+        height: 220px;
+    }
+}
+
+/* ===== CABEÇALHO E MENU ===== */
+
+header {
+    background-color: #245c45;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+header nav a {
+    color: #c8dad0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #e0f0e5;
+    color: #245c45;
+}
+
+/* Menu da página atual */
+header nav a[href="tratamentos.html"] {
+    background-color: #e0f0e5;
+    color: #245c45;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+}
+/* Centraliza o último card quando ele fica sozinho */
+.card:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+}

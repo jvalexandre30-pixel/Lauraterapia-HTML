@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamentos - LauraTerapia</title>
+    <link rel="stylesheet" href="css/tratamentos.css">
+</head>
+
+<body>
+<header>
+    <h1>LauraTerapia</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="tratamentos.html">Tratamentos</a>
+        <a href="profissionais.html">Profissionais</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+ <img src="../image/tratamento.jpg" alt="Massagem Terapêutica" width="400" height="300">
+<main>
+
+    <h2>Nossos tratamentos</h2>
+
+    <div class="cards">
+
+        <article class="card">
+            <h3>Hidroterapia</h3>
+            <p>Método terapêutico que utiliza a realização de exercícios e técnicas de reabilitação dentro de uma piscina aquecida</p>
+            <button onclick="mostrarInfo('hidroterapia')">
+                Saiba mais
+            </button>
+        </article>
+
+        <article class="card">
+            <h3>Massoterapia</h3>
+            <p>Conjunto de técnicas terapêuticas baseadas na manipulação manual dos tecidos do corpo para aliviar dores, reduzir o estresse e promover o equilíbrio físico e mental.</p>
+            <button onclick="mostrarInfo('massoterapia')">
+                Saiba mais
+            </button>
+        </article>
+
+        <article class="card">
+            <h3>Neurofuncional</h3>
+            <p>é a especialidade da fisioterapia voltada à prevenção, avaliação e reabilitação de pessoas com distúrbios do sistema nervoso central ou periférico, com o objetivo de recuperar movimentos, autonomia e qualidade de vida.</p>
+            <button onclick="mostrarInfo('neurofuncional')">
+                Saiba mais
+            </button>
+        </article>
+
+        <article class="card">
+            <h3>Cinesioterapia</h3>
+            <p>É uma abordagem terapêutica que utiliza o movimento e exercícios específicos para tratar disfunções musculoesqueléticas, melhorar a mobilidade, fortalecer músculos e promover a reabilitação funcional.</p>
+            <button onclick="mostrarInfo('cinesioterapia')">
+                Saiba mais
+            </button>
+        </article>
+        
+        
+
+    </div>
+
+    <div id="informacao"></div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 LauraTerapia</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

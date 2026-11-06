@@ -1,0 +1,193 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7faf8;
+    color: #263b32;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #245c45;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+/* MENU */
+header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+header nav a {
+    color: #c8dad0;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: #e0f0e5;
+    color: #245c45;
+}
+
+/* CONTEÚDO */
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #e8eee9;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+main h2 {
+    color: #39835a;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main p {
+    background-color: #f7faf8;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #39835a;
+    border-radius: 6px;
+}
+
+main p strong {
+    color: #245c45;
+}
+
+main h3 {
+    color: #39835a;
+    font-size: 23px;
+    margin: 30px 0 15px;
+}
+
+/* FORMULÁRIO */
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main form input,
+main form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #263b32;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #263b32;
+    background-color: #ffffff;
+    outline: none;
+}
+
+main form input:focus,
+main form textarea:focus {
+    border-color: #39835a;
+    box-shadow: 0 0 5px rgba(57,131,90,0.3);
+}
+
+main form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* BOTÃO */
+main form button {
+    background-color: #39835a;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main form button:hover {
+    background-color: #245c45;
+    transform: translateY(-2px);
+}
+
+/* MENSAGEM DE RESPOSTA */
+#resposta {
+    margin-top: 20px;
+    color: #245c45;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #183e2d;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+}
+
+/* CELULARES E TABLETS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    main h2 {
+        font-size: 25px;
+    }
+}
