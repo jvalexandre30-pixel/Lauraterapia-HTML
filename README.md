@@ -50,7 +50,7 @@ Lauraterapia-HTML/
 ├── image/
 │   └── Imagens utilizadas no projeto
 │
-├── html/│
+├── html/
 │   ├── index.html
 │   ├── sobre.html
 │   ├── tratamentos.html
