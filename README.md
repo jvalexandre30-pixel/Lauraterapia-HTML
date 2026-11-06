@@ -50,14 +50,12 @@ Lauraterapia-HTML/
 ├── image/
 │   └── Imagens utilizadas no projeto
 │
-├── html/
-│
-├── index.html
-├── sobre.html
-├── tratamentos.html
-├── profissionais.html
-├── agendamento.html
-├── contato.html
+├── html/│
+│   ├── index.html
+│   ├── sobre.html
+│   ├── tratamentos.html
+│   ├── profissionais.html
+│   └──  contato.html
 │
 └── README.md
 ```
