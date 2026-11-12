@@ -1,0 +1,287 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7faf8;
+    color: #263b32;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    background-color: #245c45;
+    padding: 20px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #c2cbc7;
+}
+
+.logo span {
+    color: #62a77d;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #c8dad0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    background-color: #e0f0e5;
+    color: #245c45;
+}
+
+
+
+/* Conteúdo principal */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* Apresentação */
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #263b32;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.texto-apresentacao {
+    flex: 1;
+}
+
+.texto-apresentacao h2 {
+    color: #245c45;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto-apresentacao p {
+    margin-bottom: 15px;
+}
+
+.imagem-apresentacao {
+    flex: 1;
+}
+
+.imagem-apresentacao img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #263b32;
+}
+
+
+/* Seções de conteúdo */
+
+.conteudo {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    border: 1px solid #263b32;
+    border-radius: 12px;
+}
+
+.conteudo h2 {
+    color: #245c45;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conteudo p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* Imagem central */
+
+.imagem-central {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.imagem-central img {
+    width: 80%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #263b32;
+}
+
+
+/* Cards de benefícios */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #f7faf8;
+    padding: 25px;
+
+    border: 1px solid #263b32;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #e8f1eb;
+}
+
+.card h3 {
+    color: #245c45;
+    margin-bottom: 10px;
+}
+
+
+/* Indicações */
+
+.indicacoes ul {
+    padding-left: 25px;
+    margin: 20px 0;
+}
+
+.indicacoes li {
+    margin-bottom: 10px;
+}
+
+
+/* Botões */
+
+.botao {
+    display: inline-block;
+
+    background-color: #245c45;
+    color: white;
+
+    text-decoration: none;
+    padding: 12px 20px;
+
+    border: 1px solid #263b32;
+    border-radius: 7px;
+
+    margin-top: 15px;
+    margin-right: 8px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #62a77d;
+    color: #263b32;
+}
+
+.voltar {
+    background-color: #e8f1eb;
+    color: #263b32;
+}
+
+
+/* Seção final */
+
+.final {
+    text-align: center;
+    background-color: #e8f1eb;
+
+    padding: 40px 25px;
+    border: 1px solid #263b32;
+    border-radius: 12px;
+}
+
+.final h2 {
+    color: #245c45;
+    margin-bottom: 15px;
+}
+
+.final p {
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #245c45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-central img {
+        width: 100%;
+    }
+
+}
