@@ -20,6 +20,7 @@ body > img {
     object-fit: cover;
     margin: 20px auto;
     border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 /* TÍTULO DA PÁGINA */
@@ -28,6 +29,7 @@ main h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ORGANIZAÇÃO DOS CARDS */
@@ -46,6 +48,7 @@ main h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     text-align: center;
     transition: 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card:hover {
@@ -336,4 +339,13 @@ header nav a[href="tratamentos.html"] {
         padding: 25px;
     }
 
+}
+.logo {
+    color: #62a77d;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #c2cbc7;
 }

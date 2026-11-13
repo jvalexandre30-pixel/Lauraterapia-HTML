@@ -191,3 +191,12 @@ footer {
         font-size: 25px;
     }
 }
+.logo {
+    color: #62a77d;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #c2cbc7;
+}
