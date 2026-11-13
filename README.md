@@ -14,6 +14,8 @@ A proposta é apresentar informações sobre a clínica, seus tratamentos, profi
 
 O projeto também representa uma forma de unir meus estudos na área de tecnologia com uma área profissional que é importante para alguém especial para mim.
 
+Levando em consideração a experiência do usuário principal, seria os usuários que acessariam e necessitariam desse site eventualmente.
+
 ## 📄 Páginas do projeto
 
 O site é composto por seis páginas principais:
@@ -36,7 +38,6 @@ O site é composto por seis páginas principais:
 
 ## 📁 Estrutura do projeto
 
-```text
 Lauraterapia-HTML/
 │
 ├── CSS/
@@ -45,20 +46,32 @@ Lauraterapia-HTML/
 │   ├── tratamentos.css
 │   ├── profissionais.css
 │   ├── agendamento.css
-│   └── contato.css
+│   ├── contato.css
+│   ├── hidroterapia.css
+│   ├── massoterapia.css
+│   ├── cinesioterapia.css
+│   └── neurofuncional.css
 │
-├── image/
+├── IMAGE/
 │   └── Imagens utilizadas no projeto
 │
-├── html/
+├── HTML/
 │   ├── index.html
 │   ├── sobre.html
 │   ├── tratamentos.html
 │   ├── profissionais.html
-│   └──  contato.html
+│   ├── agendamento.html
+│   ├── contato.html
+│   │
+│   └── tratamentos/
+│       ├── hidroterapia.html
+│       ├── massoterapia.html
+│       ├── cinesioterapia.html
+│       └── neurofuncional.html
+│
 │
 └── README.md
-```
+```text``
 
 ## ▶️ Como executar o projeto
 
